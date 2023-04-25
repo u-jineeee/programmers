@@ -6,9 +6,7 @@ public class Main {
 
 class Solution {
     public int solution(String name) {
-        int a = moveCost(name);
-        int b = nameCost(name);
-        return nameCost(name) + a;
+        return nameCost(name) + moveCost(name);
     }
 
     private int nameCost(String name) {
